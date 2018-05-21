@@ -14,15 +14,15 @@ This module is for extracting RDF triples from Korean textual data, especially O
 
 1. Clone this repository on your server.
 
-2. Go to each `CNN-API` and `L2K-API` and install dependencies by executing 'sh install-dependency.sh'.
+2. Go to the folder `L2K-API` and install dependencies by executing 'sh install-dependency.sh'.
 
-3. Download a word embedding model from `http://qamel.kaist.ac.kr/resource/ko_vec_100dim_1min_pos_stem`, and locate it under `CNN-API/data/embedding`.
+3. Download a word embedding model from `http://qamel.kaist.ac.kr/resource/ko_vec_100dim_1min_pos_stem`, and locate it under the folder `CNN-API/data/embedding`.
 
-4. Download a KB from `http://qamel.kaist.ac.kr/resource/KB.zip`, and locate all the files contained in `KB.zip` under `L2K-API/data/KB`.
+4. Download a KB from `http://qamel.kaist.ac.kr/resource/KB.zip`, and locate all the files contained in `KB.zip` under the folder `L2K-API/data/KB`.
 
-5. Go to `CNN-API` and start L2K by executing `sh start-service.sh`.
+5. Go to the folder `CNN-API` and start L2K by executing `sh start-service.sh`.
 
-6. Go to `L2K-API`, set IP address and port number of your server by editting `service-address.json`, and start REST API of L2K by executing `sh start-service.sh`.
+6. Go to the folder `L2K-API`, set IP address and port number of your server by editting `service-address.json`, and start REST API of L2K by executing `sh start-service.sh`.
 
 ## How to use
 
