@@ -6,9 +6,9 @@ This module is for extracting RDF triples from Korean textual data, especially O
 
 ## Prerequisite
 
-* 'Ubuntu 16.04 LTS'
-* 'Java 1.8'
-* 'Python 3'
+* `Ubuntu 16.04 LTS`
+* `Java 1.8`
+* `Python 3`
 
 ## How to execute
 
