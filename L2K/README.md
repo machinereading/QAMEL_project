@@ -14,7 +14,7 @@ This module is for extracting RDF triples from Korean textual data, especially O
 
 1. Clone this repository on your server.
 
-2. Go to the folder `L2K-API` and install dependencies by executing 'sh install-dependency.sh'.
+2. Go to the folder `L2K-API` and install dependencies by executing `sh install-dependency.sh`.
 
 3. Download a word embedding model from `http://qamel.kaist.ac.kr/resource/ko_vec_100dim_1min_pos_stem`, and locate it under the folder `CNN-API/data/embedding`.
 
