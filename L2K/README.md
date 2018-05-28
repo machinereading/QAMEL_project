@@ -12,7 +12,7 @@ This module is for extracting RDF triples from Korean textual data, especially O
 
 2. Install dependencies by executing `sh install-dependency.sh`.
 
-3. Download a KB from `http://qamel.kaist.ac.kr/resource/KB.zip`, and locate all the files contained in `KB.zip` under the folder `data/KB`.
+3. Download a knowledge base (KB) from `http://qamel.kaist.ac.kr/resource/KB.zip`, and locate all the files contained in `KB.zip` under the folder `data/KB`.
 
 4. Set IP address and port number of your server by editting `service-address.json`.
 
