@@ -24,7 +24,9 @@ You can use REST API of L2K by a cURL command. The sample command is as follows:
 
 - sample cURL command: `curl -d '{"date": "2018-02-10", "content": "임효준은 어제 오후 강릉 아이스아레나에서 열린 2018 평창올림픽 남자 쇼트트랙 500m 결승에서 3위를 기록하며 동메달을 차지했다." }'  http://(IP-address):(port-number)/service`
 
-- sample output: [
+- sample output: 
+```
+[
     [
         "임효준",
         "http://www.bbc.co.uk/ontologies/sport/competesIn",
@@ -62,6 +64,7 @@ You can use REST API of L2K by a cURL command. The sample command is as follows:
         "0.9998432397842407"
     ]
 ]
+```
 
 ## External dependencies
 This module internally uses an external REST API of a CNN model for relation extraction. Please refer to `https://github.com/machinereading/re-cnn` if you want to install the CNN model on your local server.

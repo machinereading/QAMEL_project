@@ -28,7 +28,9 @@ You can use REST API of T2K by a cURL command. The sample command is as follows:
 
 - sample cURL command: `curl -d '{"html_table": "<table> <tbody> <tr> <th>소속 리그</th> <th>소속</th> <th>감독</th> </tr> <tr> <td>센트럴 리그</td> <td>요미우리 자이언츠</td> <td>하라 다쓰노리</td> </tr> <tr> <td>퍼시픽 리그</td> <td>세이부 라이온스</td> <td>이하라 하루키</td> </tr> </tbody> </table>"}'  http://(IP-address):(port-number)/service`
 
-- sample output: [
+- sample output: 
+```
+[
     [
         "http://ko.dbpedia.org/resource/센트럴_리그",
         "http://dbpedia.org/ontology/team",
@@ -54,6 +56,7 @@ You can use REST API of T2K by a cURL command. The sample command is as follows:
         "0.9128541350364685"
     ]
 ]
+```
 
 ## External dependencies
 This module internally uses an external REST API of a CNN model for relation extraction. Please refer to `https://github.com/machinereading/re-cnn` if you want to install the CNN model on your local server.
