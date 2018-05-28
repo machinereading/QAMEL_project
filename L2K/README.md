@@ -22,7 +22,46 @@ This module is for extracting RDF triples from Korean textual data, especially O
 ## How to use
 You can use REST API of L2K by a cURL command. The sample command is as follows:
 
-`sample cURL command: curl -d '{"date": "2018-02-10", "content": "오늘 진행된 2018평창동계올림픽 남자 1500m 결승에서 임효준이 2분10초485를 기록하며 금메달로 결승선을 통과했다." }'  http://(IP-address):(port-number)/service`
+- sample cURL command: `curl -d '{"date": "2018-02-10", "content": "임효준은 어제 오후 강릉 아이스아레나에서 열린 2018 평창올림픽 남자 쇼트트랙 500m 결승에서 3위를 기록하며 동메달을 차지했다." }'  http://(IP-address):(port-number)/service`
+
+- sample output: [
+    [
+        "임효준",
+        "http://www.bbc.co.uk/ontologies/sport/competesIn",
+        "2018_평창_동계올림픽_쇼트트랙_여자_500m_결승_A",
+        "0.9723265171051025"
+    ],
+    [
+        "임효준",
+        "http://dbpedia.org/ontology/rank",
+        "3",
+        "0.9665167927742004"
+    ],
+    [
+        "임효준",
+        "http://dbpedia.org/property/record",
+        "2018",
+        "0.921284019947052"
+    ],
+    [
+        "2018_평창_동계올림픽_쇼트트랙_여자_500m_결승_A",
+        "http://dbpedia.org/ontology/date",
+        "2018-02-09",
+        "0.9824678301811218"
+    ],
+    [
+        "임효준",
+        "http://dbpedia.org/property/record",
+        "http://ko.dbpedia.org/resource/동메달",
+        "0.9703184962272644"
+    ],
+    [
+        "2018_평창_동계올림픽_쇼트트랙_여자_500m_결승_A",
+        "http://www.bbc.co.uk/ontologies/sport/hasCompetitor",
+        "임효준",
+        "0.9998432397842407"
+    ]
+]
 
 ## External dependencies
 This module internally uses an external REST API of a CNN model for relation extraction. Please refer to `https://github.com/machinereading/re-cnn` if you want to install the CNN model on your local server.
