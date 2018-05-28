@@ -7,7 +7,6 @@ This module is for extracting RDF triples from Korean tabular data, especially W
 ## Prerequisite
 
 * `Ubuntu 16.04 LTS`
-* `Java 1.8`
 * `Python 3`
 
 ## How to execute
