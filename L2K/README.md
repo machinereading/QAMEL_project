@@ -21,46 +21,46 @@ This module is for extracting RDF triples from Korean textual data, especially O
 ## How to use
 You can use REST API of L2K by a cURL command. The sample command is as follows:
 
-- sample cURL command: `curl -d '{"date": "2018-02-10", "content": "임효준은 어제 오후 강릉 아이스아레나에서 열린 2018 평창올림픽 남자 쇼트트랙 500m 결승에서 3위를 기록하며 동메달을 차지했다." }'  http://(IP-address):(port-number)/service`
+- sample cURL command: `curl -d '{"date": "2018-02-18", "content": "17일 강원 강릉 아이스아레나에서 열린 2018평창동계올림픽 쇼트트랙 여자 1,500m 결승전에서 최민정이 금메달을 획득하며 환호하고 있다."}'  http://(IP-address):(port-number)/service`
 
 - sample output: 
 ```
 [
     [
-        "임효준",
+        "http://ko.dbpedia.org/resource/2018년_동계_올림픽",
+        "http://dbpedia.org/ontology/date",
+        "2018-02-17",
+        "0.9473046064376831"
+    ],
+    [
+        "최민정",
+        "http://dbpedia.org/property/record",
+        "http://ko.dbpedia.org/resource/금메달",
+        "0.8844758868217468"
+    ],
+    [
+        "2018_평창_동계올림픽_쇼트트랙_여자_1,500m_결승_A",
+        "http://dbpedia.org/ontology/date",
+        "2018-02-17",
+        "0.9989437460899353"
+    ],
+    [
+        "2018_평창_동계올림픽_쇼트트랙_여자_1,500m_결승_A",
+        "http://www.bbc.co.uk/ontologies/sport/hasCompetitor",
+        "최민정",
+        "0.9996953010559082"
+    ],
+    [
+        "최민정",
         "http://www.bbc.co.uk/ontologies/sport/competesIn",
-        "2018_평창_동계올림픽_쇼트트랙_여자_500m_결승_A",
-        "0.9723265171051025"
+        "2018_평창_동계올림픽_쇼트트랙_여자_1,500m_결승_A",
+        "0.5068147778511047"
     ],
     [
-        "임효준",
-        "http://dbpedia.org/ontology/rank",
-        "3",
-        "0.9665167927742004"
-    ],
-    [
-        "임효준",
+        "최민정",
         "http://dbpedia.org/property/record",
         "2018",
-        "0.921284019947052"
-    ],
-    [
-        "2018_평창_동계올림픽_쇼트트랙_여자_500m_결승_A",
-        "http://dbpedia.org/ontology/date",
-        "2018-02-09",
-        "0.9824678301811218"
-    ],
-    [
-        "임효준",
-        "http://dbpedia.org/property/record",
-        "http://ko.dbpedia.org/resource/동메달",
-        "0.9703184962272644"
-    ],
-    [
-        "2018_평창_동계올림픽_쇼트트랙_여자_500m_결승_A",
-        "http://www.bbc.co.uk/ontologies/sport/hasCompetitor",
-        "임효준",
-        "0.9998432397842407"
+        "0.546393632888794"
     ]
 ]
 ```
