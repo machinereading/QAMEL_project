@@ -9,7 +9,7 @@ This module is for extracting RDF triples from Korean tabular data, especially W
 * `Ubuntu 16.04 LTS`
 * `Python 3`
 
-## How to execute
+## How to run
 
 1. Clone this repository on your server.
 

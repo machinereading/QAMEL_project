@@ -7,7 +7,7 @@ This module is for extracting RDF triples from Korean textual data, especially O
 * `Ubuntu 16.04 LTS`
 * `Python 3`
 
-## How to install & execute
+## How to run
 1. Clone this repository on your server.
 
 2. Install dependencies by executing `sh install-dependency.sh`.
