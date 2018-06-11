@@ -25,7 +25,7 @@ This module is for extracting RDF triples from Korean tabular data, especially W
 
 You can use REST API of T2K by a cURL command. The sample command is as follows:
 
-- sample cURL command: `{"html_table": "<table> <tbody> <tr> <th>클럽</th> <th>연고지</th> <th>경기장</th> </tr> <tr> <td>올랭피크 마르세유</td> <td>마르세유</td> <td>스타드 벨로드롬</td> </tr> <tr> <td>AS 모나코</td> <td>모나코</td> <td>루이 2세 경기장</td> </tr> </table>"}`
+- sample cURL command: `curl -d '{"html_table": "<table> <tbody> <tr> <th>클럽</th> <th>연고지</th> <th>경기장</th> </tr> <tr> <td>올랭피크 마르세유</td> <td>마르세유</td> <td>스타드 벨로드롬</td> </tr> <tr> <td>AS 모나코</td> <td>모나코</td> <td>루이 2세 경기장</td> </tr> </table>"}'  http://(IP-address):(port-number)/service`
 
 - sample output: 
 ```
