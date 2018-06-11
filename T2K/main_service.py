@@ -149,11 +149,10 @@ def service(i_json):
 
 	o_json = postprocessed_output
 	
-	'''
 	for KB_s, KB_p, KB_o, c in postprocessed_output:
 		if KB.check_domain_range(KB_s, KB_p, KB_o):
 			o_json.append([KB_s, KB_p, KB_o, c])
-	'''
+
 	# --
 
 	return o_json
