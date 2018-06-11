@@ -25,34 +25,34 @@ This module is for extracting RDF triples from Korean tabular data, especially W
 
 You can use REST API of T2K by a cURL command. The sample command is as follows:
 
-- sample cURL command: `curl -d '{"html_table": "<table> <tbody> <tr> <th>소속 리그</th> <th>소속</th> <th>감독</th> </tr> <tr> <td>센트럴 리그</td> <td>요미우리 자이언츠</td> <td>하라 다쓰노리</td> </tr> <tr> <td>퍼시픽 리그</td> <td>세이부 라이온스</td> <td>이하라 하루키</td> </tr> </tbody> </table>"}'  http://(IP-address):(port-number)/service`
+- sample cURL command: `{"html_table": "<table> <tbody> <tr> <th>클럽</th> <th>연고지</th> <th>경기장</th> </tr> <tr> <td>올랭피크 마르세유</td> <td>마르세유</td> <td>스타드 벨로드롬</td> </tr> <tr> <td>AS 모나코</td> <td>모나코</td> <td>루이 2세 경기장</td> </tr> </table>"}`
 
 - sample output: 
 ```
 [
     [
-        "http://ko.dbpedia.org/resource/센트럴_리그",
-        "http://dbpedia.org/ontology/team",
-        "http://ko.dbpedia.org/resource/요미우리_자이언츠",
-        "0.9311381578445435"
+        "http://ko.dbpedia.org/resource/스타드_벨로드롬",
+        "http://dbpedia.org/ontology/tenant",
+        "http://ko.dbpedia.org/resource/올랭피크_드_마르세유",
+        "0.796083927154541"
     ],
     [
-        "http://ko.dbpedia.org/resource/요미우리_자이언츠",
-        "http://dbpedia.org/ontology/team",
-        "http://ko.dbpedia.org/resource/센트럴_리그",
-        "0.9128541350364685"
+        "http://ko.dbpedia.org/resource/스타드_루이_II",
+        "http://dbpedia.org/ontology/tenant",
+        "http://ko.dbpedia.org/resource/AS_모나코_FC",
+        "0.7711466550827026"
     ],
     [
-        "http://ko.dbpedia.org/resource/퍼시픽_리그",
-        "http://dbpedia.org/ontology/team",
-        "http://ko.dbpedia.org/resource/사이타마_세이부_라이온스",
-        "0.9311381578445435"
+        "http://ko.dbpedia.org/resource/올랭피크_드_마르세유",
+        "http://dbpedia.org/ontology/ground",
+        "http://ko.dbpedia.org/resource/스타드_벨로드롬",
+        "0.8142433166503906"
     ],
     [
-        "http://ko.dbpedia.org/resource/사이타마_세이부_라이온스",
-        "http://dbpedia.org/ontology/team",
-        "http://ko.dbpedia.org/resource/퍼시픽_리그",
-        "0.9128541350364685"
+        "http://ko.dbpedia.org/resource/AS_모나코_FC",
+        "http://dbpedia.org/ontology/ground",
+        "http://ko.dbpedia.org/resource/스타드_루이_II",
+        "0.8178586959838867"
     ]
 ]
 ```
